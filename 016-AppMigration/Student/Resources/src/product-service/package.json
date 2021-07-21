@@ -17,7 +17,7 @@
   "author": "Brian Holt <brian.holt@microsoft.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@azure/cosmos": "^2.0.2",
+    "@azure/cosmos": "^2.1.7",
     "adal-node": "^0.1.28",
     "applicationinsights": "^1.0.6",
     "azure-keyvault": "^3.0.4",
