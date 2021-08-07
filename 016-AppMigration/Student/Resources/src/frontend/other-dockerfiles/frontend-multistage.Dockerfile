@@ -12,7 +12,7 @@ ENV INVENTORY_SERVICE_BASE_URL=$INVENTORY_SERVICE_BASE_URL
 
 RUN npm run build
 
-FROM alpine:latest
+FROM alpine:3
 RUN apk add --no-cache curl bash \
     && curl https://getcaddy.com | bash -s personal
 WORKDIR /home/
