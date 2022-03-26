@@ -12,7 +12,9 @@
     "format:write": "npm run -s format -- --write",
     "lint": "eslint \"./src/**/*.js\"",
     "lint:write": "npm run -s lint -- --fix",
-    "populate:mongodb": "node -r dotenv/config scripts/genProducts"
+    "populate:mongodb": "node -r dotenv/config scripts/genProducts",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Brian Holt <brian.holt@microsoft.com>",
   "license": "Apache-2.0",
@@ -29,7 +31,8 @@
     "hapi": "^17.6.0",
     "hapi-mongodb": "^7.1.0",
     "joi": "^13.7.0",
-    "mongodb": "^3.5.9"
+    "mongodb": "^3.5.9",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^5.6.1",
@@ -39,5 +42,6 @@
     "pg": "^7.5.0",
     "prettier": "^1.14.3",
     "to-camel-case": "^1.0.0"
-  }
+  },
+  "snyk": true
 }
