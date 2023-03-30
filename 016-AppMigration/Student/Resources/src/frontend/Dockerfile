@@ -11,7 +11,7 @@ WORKDIR /frontend
 COPY . .
 RUN npm install && npm run build
 
-FROM alpine:latest
+FROM alpine:3.17.3
 
 EXPOSE 8080
 ENV PORT 8080
